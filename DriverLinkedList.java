@@ -18,10 +18,10 @@ public class Driver
 		ListInterface<String> myList = new LList<>();
 
 		System.out.println("Testing add to end: Add 15, 25, 35, 45");
-      myList.add("15");
-      myList.add("25");
-      myList.add("35");
-      myList.add("45");
+                myList.add("15");
+                myList.add("25");
+                myList.add("35");
+                myList.add("45");
       
 		System.out.println("\n\nList should contain\n15 25 35 45 ");
 		displayList(myList);
@@ -38,8 +38,8 @@ public class Driver
 		System.out.println("\n\nIs List empty? " + myList.isEmpty());
 
 		System.out.println("-------------------------\n");
-      System.out.println("\n\nList should contain 15 25 35 45 55 65 75 85 95");
-      displayList(myList);
+	        System.out.println("\n\nList should contain 15 25 35 45 55 65 75 85 95");
+	        displayList(myList);
 		
 		System.out.println("\n------------------------\n");
 		System.out.println("Testing clear() ");
@@ -121,7 +121,7 @@ public class Driver
 	      for (int position = 1; position <= numberOfEntries; position++)
 		 System.out.println(myList.getEntry(position) +
 				    " is entry " + position);
-	      System.out.println();
+	       System.out.println();
 		System.out.println("\n-------------------------\n");
 		System.out.println("Testing contains() [results should be TRUE]");
 		System.out.println("List contains 92: " + myList.contains("92"));
