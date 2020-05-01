@@ -1,5 +1,3 @@
-
-
 /** 
    A driver that demonstrates the class LList.
    
@@ -55,16 +53,16 @@ public class Driver
 		myList = new LList<>();
 
 		System.out.println("Add 15 at position 1:");
-      myList.add(1, "15");
+      		myList.add(1, "15");
 		System.out.println("Add 25 at position 2:");
-      myList.add(2, "25");
+      		myList.add(2, "25");
 		System.out.println("Add 35 at position 3:");
-      myList.add(3, "35");
-      /*		System.out.println("Add 99 at position 0:");
-       myList.add(0, "99");
-       System.out.println("Add 99 at position 9:");
-       myList.add(9, "99");
-       */
+      		myList.add(3, "35");
+	      /*System.out.println("Add 99 at position 0:");
+	       myList.add(0, "99");
+	       System.out.println("Add 99 at position 9:");
+	       myList.add(9, "99");
+	       */
 	
 		System.out.println("\n\nList should contain\n15 25 35 ");
 		displayList(myList);
@@ -72,15 +70,15 @@ public class Driver
 		System.out.println("Is List empty? " + myList.isEmpty());
 
 		System.out.println("Add 19 at position 1:");
-      myList.add(1, "19");
+      		myList.add(1, "19");
 		System.out.println("Add 39 at position 3:");
-      myList.add(3, "39");
+      		myList.add(3, "39");
 		System.out.println("Add 29 at position 2:");
-      myList.add(2, "29");
+      		myList.add(2, "29");
 		System.out.println("Add 55 at position 7:");
-      myList.add(myList.getLength()+1, "55");
+      		myList.add(myList.getLength()+1, "55");
 		System.out.println("Add 65 at position 8:");
-      myList.add(8, "65");
+      		myList.add(8, "65");
 	
 		System.out.println("\n\nList should contain\n19 29 15 39 25 35 55 65");
 		displayList(myList);
@@ -114,16 +112,16 @@ public class Driver
 		
 		System.out.println("Is List empty? " + myList.isEmpty());
 		
-      System.out.println("\n-------------------------\n");
-      System.out.println("Testing getEntry() ");
-      int numberOfEntries = myList.getLength();
+	      System.out.println("\n-------------------------\n");
+	      System.out.println("Testing getEntry() ");
+	      int numberOfEntries = myList.getLength();
       
-      System.out.println("\nThe list contains " + numberOfEntries +
-                         " entries, as follows:");
-      for (int position = 1; position <= numberOfEntries; position++)
-         System.out.println(myList.getEntry(position) +
-                            " is entry " + position);
-      System.out.println();
+	      System.out.println("\nThe list contains " + numberOfEntries +
+				 " entries, as follows:");
+	      for (int position = 1; position <= numberOfEntries; position++)
+		 System.out.println(myList.getEntry(position) +
+				    " is entry " + position);
+	      System.out.println();
 		System.out.println("\n-------------------------\n");
 		System.out.println("Testing contains() [results should be TRUE]");
 		System.out.println("List contains 92: " + myList.contains("92"));
