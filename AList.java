@@ -16,8 +16,6 @@ public class AList<T> implements ListInterface<T> {
 		this(DEFAULT_CAPACITY); // Call next constructor
 	} // end default constructor
 	
-	
-	
 	public AList(int initialCapacity) {
 		// check if initicalCapacity is small
 		if (initialCapacity < DEFAULT_CAPACITY)
@@ -101,7 +99,6 @@ public class AList<T> implements ListInterface<T> {
 			throw new IndexOutOfBoundsException("Illegal position given to remove operation.");
 	}
 	
-	
 	/** Removes all entries from this list. */
 	public void clear() {
 		for (int i = 1; i < numberOfEntries; i++)
@@ -175,7 +172,6 @@ public class AList<T> implements ListInterface<T> {
 		return numberOfEntries; 
 	}
 
-
 	/** Sees whether this list is empty.
 	* @return True if the list is empty, or false if not.
 	*/
@@ -198,7 +194,6 @@ public class AList<T> implements ListInterface<T> {
 		}
 		return result;
 	} // end to Array
-
 	
 	// Doubles the capacity of the array list if it is full.
 	// Precondition: checkInitialization has been called.
@@ -212,7 +207,6 @@ public class AList<T> implements ListInterface<T> {
 	list = Arrays.copyOf(list, newCapacity + 1);
 	} // end if
 	} // end ensureCapacity
-
  
 	// Makes room for a new entry at newPosition.
 	// Precondition: 1 <= newPosition <= numberOfEntries + 1;
@@ -248,15 +242,12 @@ public class AList<T> implements ListInterface<T> {
 	list[index] = list[index + 1];
 	} // end removeGap
 
-
 	// Throws an exception if this object is not initialized.
 	private void checkInitialization()
 	{
 	if (!initialized)
 	throw new SecurityException ("AList object is not initialized properly.");
 	} // end checkInitialization
-	
-	
 	
 	// Throws an exception if the client requests a capacity that is too large.
 	private void checkCapacity(int capacity)
