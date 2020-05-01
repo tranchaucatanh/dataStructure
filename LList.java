@@ -1,3 +1,6 @@
+/**
+	Edited by Chi Tran
+*/
 public class LList<T> implements ListInterface<T>
 {
 	private Node firstNode; // Reference to first node of chain
