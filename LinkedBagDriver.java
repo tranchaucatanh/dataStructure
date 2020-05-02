@@ -1,8 +1,3 @@
-/** A demonstration of the class LinkedBag.
-    @author Frank M. Carrano
-    @author Timothy M. Henry
-    @version 4.0
-*/
 public class LinkedBagDemo
 {
 	public static void main(String[] args) 
